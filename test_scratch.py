@@ -19,5 +19,5 @@ def test_search_yasha_selene(set_window_size):
 
 def test_invalid_search(set_window_size):
     browser.open('https://google.com')
-    browser.element('[name="q"]').should(be.blank).type('jkgfbj]fgdfv2').press_enter()
+    browser.element('[name="q"]').should(be.blank).type('jkgfbj]fgdfv').press_enter()
     browser.element('[id="result-stats"]').should(have.text('Результатов: примерно 0'))
